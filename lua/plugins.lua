@@ -106,9 +106,6 @@ packer.startup {
       config = [[require('config.hlslens')]],
     }
 
-    -- Stay after pressing * and search selected text
-    use { "haya14busa/vim-asterisk", event = "VimEnter" }
-
     -- File search, tag search and more
     if vim.g.is_win then
       use { "Yggdroot/LeaderF", cmd = "Leaderf" }
@@ -268,12 +265,9 @@ packer.startup {
     -- Markdown previewing
     use {
       "iamcco/markdown-preview.nvim",
-      run = function()
-        fn["mkdp#util#install"]()
-      end,
+      run = "cd app && npm install",
       ft = { "markdown" },
     }
-
     use { "folke/zen-mode.nvim", cmd = "ZenMode", config = [[require('config.zen-mode')]] }
 
     if vim.g.is_mac then
