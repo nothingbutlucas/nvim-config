@@ -18,18 +18,6 @@
     <a href="https://github.com/jdhao/nvim-config/search?l=vim-script">
       <img src="https://img.shields.io/github/languages/top/jdhao/nvim-config" alt="Top languages"/>
     </a>
-    <a href="https://github.com/jdhao/nvim-config/graphs/commit-activity">
-      <img src="https://img.shields.io/github/commit-activity/m/jdhao/nvim-config?style=flat-square" />
-    </a>
-    <a href="https://github.com/jdhao/nvim-config/releases/tag/v0.8.1">
-      <img src="https://img.shields.io/github/commits-since/jdhao/nvim-config/v0.8.1?style=flat-square" />
-    </a>
-    <a href="https://github.com/jdhao/nvim-config/graphs/contributors">
-      <img src="https://img.shields.io/github/contributors/jdhao/nvim-config?style=flat-square" />
-    </a>
-    <a>
-      <img src="https://img.shields.io/github/repo-size/jdhao/nvim-config?style=flat-square" />
-    </a>
     <a href="https://github.com/jdhao/nvim-config/blob/master/LICENSE">
       <img src="https://img.shields.io/github/license/jdhao/nvim-config?style=flat-square&logo=GNU&label=License" alt="License"/>
     </a>
