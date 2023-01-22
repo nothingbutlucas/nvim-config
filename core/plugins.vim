@@ -396,5 +396,6 @@ let g:auto_save = 1  " enable AutoSave on Vim startup
 
 " Copilot
 
-imap <silent><script><expr> <C-G> copilot#Accept("\<CR>")
-let g:copilot_no_tab_map = v:true
+" imap <silent><script><expr> <C-G> copilot#Accept("\<CR>")
+" let g:copilot_no_tab_map = v:true
+

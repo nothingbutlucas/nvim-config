@@ -51,7 +51,17 @@ packer.startup {
         config = function() require("tmux").setup() end
     })
 
-    use { "github/copilot.vim" }
+    -- use { "github/copilot.vim" }
+
+    use {
+    'Exafunction/codeium.vim',
+    config = function ()
+      -- Change '<C-g>' here to any keycode you like.
+      vim.keymap.set('i', '<C-g>', function ()
+        return vim.fn['codeium#Accept']()
+      end, { expr = true })
+    end
+    }
 
     use { "wbthomason/packer.nvim", opt = true }
 
