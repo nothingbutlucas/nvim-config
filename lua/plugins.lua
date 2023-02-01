@@ -51,7 +51,17 @@ packer.startup {
         config = function() require("tmux").setup() end
     })
 
-    use { "github/copilot.vim" }
+    -- use { "github/copilot.vim" }
+
+    use {
+    'Exafunction/codeium.vim',
+    config = function ()
+      -- Change '<C-g>' here to any keycode you like.
+      vim.keymap.set('i', '<C-g>', function ()
+        return vim.fn['codeium#Accept']()
+      end, { expr = true })
+    end
+    }
 
     use { "wbthomason/packer.nvim", opt = true }
 
@@ -215,10 +225,14 @@ packer.startup {
     -- Show undo history visually
     use { "simnalamburt/vim-mundo", cmd = { "MundoToggle", "MundoShow" } }
 
+    -- better UI for some nvim actions
+    use {'stevearc/dressing.nvim'}
+
     -- Manage your yank history
-    if vim.g.is_win or vim.g.is_mac then
-      use { "svermeulen/vim-yoink", event = "VimEnter" }
-    end
+    use({
+      "gbprod/yanky.nvim",
+      config = [[require('config.yanky')]]
+    })
 
     -- Handy unix command inside Vim (Rename, Move etc.)
     use { "tpope/vim-eunuch", cmd = { "Rename", "Delete" } }
