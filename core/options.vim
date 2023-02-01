@@ -179,3 +179,5 @@ set diffopt+=internal,indent-heuristic,algorithm:histogram
 
 set nowrap  " do no wrap
 set noruler
+
+set synmaxcol=500

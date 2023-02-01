@@ -17,7 +17,6 @@ M.colorscheme2dir = {
   kanagawa = "kanagawa.nvim",
   catppuccin = "catppuccin",
   rose_pine = "rose-pine",
-  onedarkpro = "onedarkpro.nvim",
   monokai = "monokai.nvim",
   material = "material.nvim",
 }
